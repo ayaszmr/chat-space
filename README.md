@@ -31,7 +31,6 @@ Things you may want to cover:
 |email|string|null: false|
 |password|string|null: false|
 |name|string|null: false|
-|group_id|integer|null: false, foreign_key: true|
 ### Association
 - has_many :chats
 - has_many :groups_users
