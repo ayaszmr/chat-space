@@ -10,9 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20191122061022) do
-=======
 ActiveRecord::Schema.define(version: 20191123114316) do
 
   create_table "group_users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -30,7 +27,6 @@ ActiveRecord::Schema.define(version: 20191123114316) do
     t.datetime "updated_at", null: false
     t.index ["name"], name: "index_groups_on_name", unique: true, using: :btree
   end
->>>>>>> WIP: commit untracked files
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name",                                null: false
@@ -46,9 +42,6 @@ ActiveRecord::Schema.define(version: 20191123114316) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
-<<<<<<< HEAD
-=======
   add_foreign_key "group_users", "groups"
   add_foreign_key "group_users", "users"
->>>>>>> WIP: commit untracked files
 end
