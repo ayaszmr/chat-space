@@ -57,3 +57,6 @@ gem 'haml-rails'
 gem "font-awesome-rails"
 
 gem 'devise'
+
+gem "loofah", ">= 2.3.1"
+
